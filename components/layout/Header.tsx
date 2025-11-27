@@ -36,11 +36,22 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <div 
-          className="cursor-pointer font-bold text-2xl text-primary tracking-tighter flex items-center gap-2"
+          className="cursor-pointer flex items-center select-none"
           onClick={() => onNavigate('home')}
         >
-          <span className="text-3xl">&lt;/&gt;</span>
-          <span>MiniTax</span>
+          <div className="flex items-baseline font-[900] text-3xl tracking-tighter text-[#212121]">
+            <span>m</span>
+            <span className="relative mx-[1px]">
+              i
+              <span className="absolute top-[9px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] bg-[#00BFA5] rounded-full"></span>
+            </span>
+            <span>n</span>
+            <span className="relative mx-[1px]">
+              i
+              <span className="absolute top-[9px] left-1/2 -translate-x-1/2 w-[7px] h-[7px] bg-[#00BFA5] rounded-full"></span>
+            </span>
+            <span>tax</span>
+          </div>
         </div>
 
         {/* Desktop Nav */}
